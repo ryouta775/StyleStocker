@@ -202,6 +202,16 @@
       text-align: center;
     }
 
+    .credit-card {
+      margin-top: 24px;
+      text-align: center;
+    }
+
+    .credit-card p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
     @media (max-width: 900px) {
       .shell {
         width: min(100% - 24px, 1120px);
@@ -271,13 +281,16 @@
           </div>
           <div class="info-item">
             <div class="label">問い合わせ先メール</div>
-            <a href="mailto:ryota.appjob@gmail.com">ryota.appjob@gmail.com</a>
+            <a href="mailto:support@example.com">support@example.com</a>
           </div>
           <div class="info-item">
             <div class="label">プライバシーポリシー</div>
             <a href="privacy.html">privacy.html</a>
           </div>
         </div>
+        <p class="muted-note">
+          公開前に問い合わせ先メールは実際に受信できるアドレスへ差し替えてください。
+        </p>
       </aside>
     </section>
 
@@ -291,6 +304,14 @@
         これはユーザーの購買判断を補助するための情報提供であり、アプリ内で直接決済を行うものではありません。
         購入や詳細確認は楽天市場の商品ページ上で行われます。
       </p>
+    </section>
+
+    <section class="card credit-card" aria-label="rakuten credit">
+      <h2>Rakuten Web Service Credit</h2>
+      <p>楽天ウェブサービス利用に伴うクレジット表示です。</p>
+      <!-- Rakuten Web Services Attribution Snippet FROM HERE -->
+      <a href="https://webservice.rakuten.co.jp/" target="_blank"><img src="https://webservice.rakuten.co.jp/img/credit/200709/credit_22121.gif" border="0" alt="Rakuten Web Service Center" title="Rakuten Web Service Center" width="221" height="21"/></a>
+      <!-- Rakuten Web Services Attribution Snippet TO HERE -->
     </section>
 
     <footer class="footer">
