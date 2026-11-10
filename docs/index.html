@@ -322,5 +322,20 @@
       <p>© StyleStocker</p>
     </footer>
   </main>
+  <script id="apple-campaign-routing">
+    (() => {
+      "use strict";
+      const campaign = new URLSearchParams(window.location.search).get("campaign");
+      const campaignLinks = new Map([
+        ["ig_20261110_outfit", "https://apps.apple.com/app/apple-store/id6760244888?pt=128612072&ct=ig_20261110_outfit&mt=8"],
+        ["ig_20261110_savedpost", "https://apps.apple.com/app/apple-store/id6760244888?pt=128612072&ct=ig_20261110_savedpost&mt=8"]
+      ]);
+      const destination = campaignLinks.get(campaign);
+      if (!destination) return;
+      document.querySelectorAll('a[href="https://apps.apple.com/jp/app/stylestocker/id6760244888"]').forEach((link) => {
+        link.href = destination;
+      });
+    })();
+  </script>
 </body>
 </html>
